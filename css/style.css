@@ -104,10 +104,12 @@ outline: none;
   position: relative;
 }
 
+
  .hero-container {
   position: relative;
   z-index: 1;
  }
+
 
 .hero-overlay {
   content: "";
@@ -118,6 +120,7 @@ outline: none;
   bottom: 0px;
   background-color: rgba(0,0,0,0.7);
 }
+
 
 .title{
   margin: 0;
@@ -130,6 +133,7 @@ outline: none;
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
 
 .hero-container__p {
   font-family: Nunito Sans;
@@ -273,31 +277,6 @@ outline: none;
   margin-right:0px;
 }
 
-/*.arrow-line span{
-  display:block;
-  height:1px ;
-  width:40px ;
-  background-color: #FFFFFF;
- }
-
- .arrow{
-  border: solid white;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 3px;
- }
-
-
- .arrow-left{
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-
-.arrow-right{
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}*/
 
 .control{
   margin-top:-310px;
@@ -1624,6 +1603,9 @@ input[id="name"]{
 
 .questions-mobil-form input{
   width: 340px;
+  border: none;
+  border-radius:none;
+  border-bottom:1px solid rgba(255, 255, 255, 1);
 }
 
 
