@@ -737,6 +737,9 @@ justify-content: space-between;
   margin-top:35px ;
 }
 
+.realize-mobil, .img-navigation-mobil__arrow{
+  display: none;
+}
 
 .realize{
   background-image: url("../images/realize_background.jpg") ;
@@ -1155,7 +1158,7 @@ footer {
 }
 
 
-@media (max-width:375px) {
+@media (max-width:738px) {
 
 .header-content{
   padding-left: 18px;
@@ -1240,6 +1243,10 @@ footer {
   display: none;
 }
 
+.projects-container__image-mobil{
+  text-align: center;
+}
+
 .projects-container__image-mobil img{
   position: relative;;
   display: initial;
@@ -1250,14 +1257,20 @@ footer {
 
 .projects-container__image-mobil__arrow{
   position: absolute;
+  right: calc((100vw - 315px)/2);
   width: 313px;
   height: 36px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 14px;
+  justify-content: center;
   margin-top: -180px;
+  margin-left: 20px;
 }
+
+.arrow-left{
+ margin-right: 241px;
+}
+
 
 .projects-container__image-mobil__arrow img{
   width: 36px;
@@ -1279,7 +1292,6 @@ footer {
   margin-bottom: 36px;
   margin-left: 14px;
   margin-right: 15px;
-  font-family: Nunito Sans;
 }
 
 
@@ -1292,6 +1304,7 @@ footer {
   text-align: left;
 }
 
+
 .characteristic__p{
   font-family: Nunito Sans;
   font-size: 11px;
@@ -1299,12 +1312,16 @@ footer {
   letter-spacing: 0em;
 }
 
+
 .сompleted-projects-characteristic__area, .сompleted-projects-characteristic__cost{
   margin-left: -40px;
 }
+
+
 .arrow-navigation{
   display: none;
 }
+
 
 .control{
   height: 851px;
@@ -1345,8 +1362,8 @@ footer {
 
 .control__p-mobil{
   display: initial;
-  display: inline-block;
   color: #FFFFFF;
+  display: block;
   text-align: center;
   font-size:11px;
   line-height: 19px;
@@ -1392,6 +1409,8 @@ input[id="name"]{
 .first-form__mobil input::placeholder{
   color: #FFFFFF;
 }
+
+
 .first-checkbox{ 
   display: none;
 }
@@ -1408,10 +1427,12 @@ input[id="name"]{
   border-radius: 0;
 }
 
+
 .types-repair{
   padding-top:90px;
   padding-right: 17px;
 }
+
 
 .repair__title{
   font-size: 22px;
@@ -1419,10 +1440,13 @@ input[id="name"]{
   margin-top: -5px;
 }
 
+
 .characteristic{
   display: inline-block;
   margin-top: -1px;
+  margin-bottom: 174px;
 }
+
 
 .characteristic__img img{
   width: 340px;
@@ -1430,6 +1454,7 @@ input[id="name"]{
   margin-left:18px;
   margin-right:17px;
 }
+
 
 .redecorating{
   margin-top: 40px;
@@ -1439,11 +1464,13 @@ input[id="name"]{
   margin-bottom:260px ;
 }
 
+
 .characteristic-block{
   width: 270px;
   height: 241px;
   margin-left: 18px;
 }
+
 
 .characteristic-block h3{
   font-size:15px;
@@ -1451,6 +1478,7 @@ input[id="name"]{
   margin-top: 18px;
   margin-bottom: -8px;
 }
+
 
 .characteristic-block ul li {
   font-size: 13px;
@@ -1462,8 +1490,8 @@ input[id="name"]{
   width: 190px;
   height: 40px;
   margin-top: 17px;
-
 }
+
 
 .characteristic-block .price p{
   font-size: 15px;
@@ -1472,68 +1500,91 @@ input[id="name"]{
 
 
 .realize{
-  background-image:none;
+  display: none;
 }
 
-.realize__title{
-  text-align: center;
+
+.realize-mobil, .realize-container-mobil, .realize-mobil__title, .img-navigation-1{
+  display: initial;
+}
+
+
+.realize-mobil__title{
   font-size: 22px;
   line-height: 30px;
-  margin-top: -210px;
-  margin-left: -20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.img-navigation {
+.img-navigation{
   display: initial;
+}
+
+.img-navigation img{
   position: relative;
-  margin-left: 18px;
-  margin-right: 17px;
-  margin-bottom:24px ;
+  width: 340px;
+  height: 241px;
+  margin-bottom: 24px;
   z-index: 1;
   margin-top: -15px;
+  margin-bottom: -127px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .img-navigation__arrow{
   position: absolute;
+  right: calc((100vw - 315px)/2);
+  z-index: 1;
   width: 313px;
   height: 36px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 30px;
-  margin-top: -170px;
-  z-index: 1;
+  justify-content: center;
 }
 
-.realize-navigation, .wrapper, .realize-overlay{
-  display: none;
+.img-navigation__arrow img{
+  width: 36px;
+  height: 36px;
 }
+
+.img-navigation__arrow .arrow-left{
+  margin-right: 241px;
+}
+
 
 .about_us, .clients{
   display: none;
 }
 
+
 .geolocation, footer{
   display: none;
 }
+
 
 .geolocation__mobil{
   display: initial;
 }
 
+
 .geolocation-container-mobil{
   background-color: #181818;
   height: 1195px;
-  width: 375px;
   padding-bottom: 49px;
   padding-top: 173px;
-  margin-top: -800px;
 }
+
 
 .questions-mobil {
   display: initial;
   margin-left: 18px;
 }
+
 
 .questions-mobil-form form{
   display: flex;
@@ -1545,12 +1596,14 @@ input[id="name"]{
   margin-bottom: 45px;
 }
 
+
 .questions-mobil-form .questions__title{
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
 }
+
 
 .questions-mobil-form__name{
   margin-top:-12px ;
@@ -1559,6 +1612,8 @@ input[id="name"]{
 .questions-mobil-form__phone, .questions-mobil-form__questions{
   margin-top:43px ;
 }
+
+
 .questions-mobil-form p{
   font-size: 13px;
   line-height: 21px;
@@ -1566,9 +1621,11 @@ input[id="name"]{
   margin-bottom: -1px;
 }
 
+
 .questions-mobil-form input{
   width: 340px;
 }
+
 
 .questions-mobil-form input::placeholder{
   font-size: 14px;
@@ -1582,7 +1639,7 @@ input[id="name"]{
 margin-left:-1px;
 margin-top: -1px;
 }
- 
+
 
 .questions-button-mobil button{
   display: block;
@@ -1592,13 +1649,15 @@ margin-top: -1px;
   margin-top: 67px;
 }
 
+
 .geolocation-adress-mobil, .geolocation-map-mobil{
   display: initial;
 }
 
-.geolocation-map-mobil{
-  margin-left: 18px;
-  margin-right: 17px;
+
+.geolocation-map-mobil {
+  display: block;
+  text-align: center;
 }
 
 .geolocation-adress-mobil{
@@ -1606,26 +1665,31 @@ margin-top: -1px;
   line-height: 25px;
 }
 
+
 .geolocation-icon-mobil{
   width: 99px;
   height:39px;
   margin-top: -3px;
 }
 
+
 .geolocation-icon-mobil img{
   margin-top: -27px;
   margin-left: 10px;
 }
+
 
 .geolocation-icon-mobil span{
   width: 39px;
   height: 39px;
 }
 
+
 .geolocation-icon-mobil .msg-icon img{
   width: 20px;
   height: 16px;
 }
+
 
 .geolocation-icon-mobil .camera-icon img{
   width: 17px;
